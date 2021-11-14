@@ -1,0 +1,27 @@
+.contacts__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--contacts-color-dark);
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__link {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  color: currentColor;
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--hover-focus-color-others);
+}
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
+  fill: var(--hover-focus-color-others);
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: var(--contacts-color-dark);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}

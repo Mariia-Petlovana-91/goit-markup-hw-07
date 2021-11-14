@@ -1,0 +1,19 @@
+.head {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.head__elements {
+  display: flex;
+  align-items: center;
+}
+.head__logo {
+  margin-right: 93px;
+}
+.head__contacts {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

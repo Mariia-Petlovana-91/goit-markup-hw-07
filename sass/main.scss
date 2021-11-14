@@ -1,1 +1,22 @@
+//utils
+@import "./utils/variables";
+@import "./utils/style-reset";
 
+//base
+@import "./base/visually-hidden";
+@import "./base/container";
+@import "./base/section";
+
+//components
+@import "./components/second-title";
+@import "./components/third-title";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contacts";
+@import "./components/btn";
+@import "./components/specialiti";
+
+//layout
+@import "./layout/head";
+@import "./layout/hero";
+@import "./layout/features";
