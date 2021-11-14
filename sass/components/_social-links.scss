@@ -1,0 +1,26 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-links__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-links__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+.social-links__icon {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  padding: 12px;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}

@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/bg-img.jpg);
+    url("../images/bg-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,8 +34,9 @@
   background-color: var(--akcent-color);
   color: var(--text-color-light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.btn__hero:hover,
-.btn__hero:focus {
-  background-color: var(--hover-focus-color-importmant-button);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color-importmant-button);
+  }
 }

@@ -1,0 +1,28 @@
+.section-our-team {
+  background-color: var(--background-color);
+}
+.specialiti__title-our-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color-dark);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.specialiti__text-our-team {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-color-dark);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.social-links__link--our-team:hover,
+.social-links__link--our-team:focus {
+  background-color: var(--hover-focus-color-others);
+}
+.social-links__link--our-team:hover .social-links__icon,
+.social-links__link--our-team:focus .social-links__icon {
+  fill: #ffffff;
+}

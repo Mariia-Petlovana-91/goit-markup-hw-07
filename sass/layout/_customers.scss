@@ -1,0 +1,28 @@
+.specialiti__item--customers {
+  width: 170px;
+  height: 92px;
+}
+.specialiti__item--customers:not(:last-child) {
+  margin-right: 30px;
+}
+.specialiti__link--customers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #afb1b8;
+  padding: 16px 32px;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+.specialiti__icons--customers {
+  fill: #afb1b8;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.specialiti__link--customers:hover,
+.specialiti__link--customers:focus {
+  border-color: var(--hover-focus-color-others);
+}
+.specialiti__link--customers:hover .specialiti__icons--customers,
+.specialiti__link--customers:focus .specialiti__icons--customers {
+  fill: var(--hover-focus-color-others);
+}
