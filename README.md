@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-GO-IT-HW-7-KOMPILAPORSASS-BEM
+# -goit-markup-hw-02.
+GoIt-HomeWork2-HTML+CSS
