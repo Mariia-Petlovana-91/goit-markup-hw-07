@@ -3,17 +3,13 @@
 }
 .specialiti__title-our-team {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.19em, 0.03em);
   color: var(--title-color-dark);
   text-align: center;
   margin-bottom: 10px;
 }
 .specialiti__text-our-team {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.19em, 0.03em);
   color: var(--text-color-dark);
   text-align: center;
   margin-bottom: 16px;

@@ -1,8 +1,6 @@
 .second-title {
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 1.17em, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color-dark);
 }
 .second-title--margin-bottom {

@@ -68,18 +68,13 @@
   border-color: var(--akcent-color);
 }
 .footer__form-btn {
+  @include font(16px, 1.88em, 0.06em);
+  @include color(var(--akcent-color), var(--text-color-light), null);
+  @include flex(flex, center, center);
   min-width: 200px;
-  background-color: var(--akcent-color);
-  font-size: 16px;
-  line-height: 1.88em;
-  letter-spacing: 0.06em;
-  color: var(--text-color-light);
   padding: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer__form-btn:hover,
-.footer__form-btn:focus {
-  background-color: var(--hover-focus-color-importmant-button);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color-importmant-button);
+  }
 }

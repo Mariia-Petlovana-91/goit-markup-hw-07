@@ -1,0 +1,15 @@
+@mixin font($fs, $lh, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin flex($df, $jc, $ai) {
+  display: $df;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin color($bg, $color, $fill) {
+  background-color: $bg;
+  color: $color;
+  fill: $fill;
+}

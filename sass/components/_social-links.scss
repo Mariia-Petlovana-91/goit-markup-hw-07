@@ -1,14 +1,11 @@
 .social-links {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, null);
 }
 .social-links__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-links__item:not(:last-child) {
-  margin-right: 10px;
+  @include flex(flex, center, center);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-links__link {
   width: 44px;

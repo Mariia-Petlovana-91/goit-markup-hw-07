@@ -12,27 +12,24 @@
   background-size: cover;
 }
 .hero__title {
+  @include font(44px, 1.36em, 0.06em);
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
   width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
   color: var(--title-color-light);
 }
 
 .btn__hero {
+  text-transform: none;
+  @include font(16px, 1.88em, 0.06em);
+  @include color(var(--akcent-color), var(--text-color-light), null);
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: var(--akcent-color);
-  color: var(--text-color-light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   &:hover,

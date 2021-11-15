@@ -1,15 +1,10 @@
 .checkebox__label {
-  font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71em, 00.03em);
   color: #757575;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
   margin-bottom: 30px;
   position: relative;
 }
-
 .checekebox__icon {
   display: block;
   cursor: pointer;
@@ -18,8 +13,7 @@
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 4px;
-  background-color: #ffffff;
-  fill: transparent;
+  @include color(var(title-color-light), null, transparent);
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -40,10 +34,11 @@
   display: block;
   margin-left: 5px;
   position: relative;
-}
-.checekebox__link:hover,
-.checekebox__link:focus {
-  outline-color: var(--hover-focus-color-importmant-button);
+
+  &:hover,
+  &:focus {
+    outline-color: var(--hover-focus-color-importmant-button);
+  }
 }
 .checekebox__link::after {
   content: "";

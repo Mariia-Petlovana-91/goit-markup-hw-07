@@ -3,9 +3,9 @@
 }
 .specialiti__item {
   margin-right: 30px;
-}
-.specialiti__item:nth-child(4n + 4) {
-  margin-right: 0px;
+  &:nth-child(4n + 4) {
+    margin-right: 0px;
+  }
 }
 .specialiti__icons {
   background-color: var(--background-color);

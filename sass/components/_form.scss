@@ -6,22 +6,19 @@
   flex-direction: column;
 }
 .form__title {
-  font-size: 20px;
-  line-height: 1.15em;
+  @include font(20px, 1.15em, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
 }
 .form__label-text {
-  font-size: 12px;
-  line-height: 1.17em;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.17em, 0.01em);
   color: #757575;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
-.form__label-text:not(:last-child) {
-  margin-bottom: 10px;
-}
+
 .form__box-svg {
   display: block;
   position: relative;
@@ -30,25 +27,26 @@
   width: 100%;
   min-height: 40px;
   padding: 12px 12px 12px 30px;
+  &:hover,
+  &:focus {
+    border-color: var(--akcent-color);
+    outline-color: var(--akcent-color);
+  }
 }
 .form__comment {
   padding: 12px 16px;
   resize: none;
   width: 100%;
   min-height: 120px;
-}
-.form__comment::placeholder {
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.form__input:hover,
-.form__input:focus,
-.form__comment:hover,
-.form__comment:focus {
-  border-color: var(--akcent-color);
-  outline-color: var(--akcent-color);
+  &::placeholder {
+    @include font(14px, 1.14em, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--akcent-color);
+    outline-color: var(--akcent-color);
+  }
 }
 .form-icon {
   position: absolute;
@@ -62,18 +60,15 @@
   fill: var(--akcent-color);
 }
 .form__btn--modal {
+  @include font(16px, 1.88em, 0.06em);
+  @include color(var(--akcent-color), var(--text-color-light), null);
   align-self: center;
   min-width: 200px;
   min-height: 50px;
-  background-color: var(--akcent-color);
-  font-size: 16px;
-  line-height: 1.88em;
   text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--text-color-light);
-}
-.form--btn:hover,
-.form--btn:hover {
-  outline-color: var(--hover-focus-color-importmant-button);
-  background-color: var(--hover-focus-color-importmant-button);
+  &:hover,
+  &:hover {
+    outline-color: var(--hover-focus-color-importmant-button);
+    background-color: var(--hover-focus-color-importmant-button);
+  }
 }

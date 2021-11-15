@@ -1,6 +1,4 @@
 .third-title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14em, 0.03em);
   text-transform: uppercase;
 }

@@ -13,7 +13,5 @@
 }
 .head__contacts {
   margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
 }

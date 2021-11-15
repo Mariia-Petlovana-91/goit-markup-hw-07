@@ -13,30 +13,22 @@
   position: relative;
 }
 .grade__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color-light);
+  @include flex(flex, center, center);
+  @include font(14px, 1.14em, 0.03em);
+  @include color(#2f303a80, var(--text-color-light), null);
+  position: absolute;
   width: 100%;
   min-height: 70px;
-  background-color: #2f303a80;
-  position: absolute;
   top: 224px;
+  text-transform: uppercase;
 }
 .grade__overflow {
-  font-size: 18px;
-  line-height: 1.56em;
-  letter-spacing: 0.03em;
-  color: var(--text-color-light);
+  @include font(18px, 1.56em, 0.03em);
+  @include color(#2196f390, var(--text-color-light), null);
   padding: 63px 24px;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #2196f390;
   top: 0;
   left: 0;
   transform: translateY(100%);

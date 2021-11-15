@@ -8,8 +8,6 @@
   color: var(--title-color-dark);
 }
 .specialiti__text-features {
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.71em;
+  @include font(14px, 1.71em, 0.03em);
   color: var(--text-color-dark);
 }
